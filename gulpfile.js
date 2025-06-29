@@ -25,6 +25,7 @@ const cssTaskHandler = () => {
 		.pipe(browserSync.stream());
 };
 
+
 const imagesTaskHandler = () => {
 	return src("./src/images/**/*.*")
 		.pipe(imagemin())
@@ -71,6 +72,11 @@ export const images = imagesTaskHandler;
 
 export const build = series(
 	cleanDistTaskHandler,
-	parallel(htmlTaskHandler, cssTaskHandler, fontTaskHandler, imagesTaskHandler)
+	parallel(
+		htmlTaskHandler,
+		cssTaskHandler,
+		fontTaskHandler,
+		imagesTaskHandler
+	)
 );
 export const dev = series(build, browserSyncTaskHandler);

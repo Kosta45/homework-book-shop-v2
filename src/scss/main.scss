@@ -1,3 +1,6 @@
+@use "./modern-normalize.scss";
+
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -130,6 +133,7 @@ a {
   position: fixed;
   border: none;
   background: none;
+  z-index: 1;
   left: 87%;
   top: 84%;
 }

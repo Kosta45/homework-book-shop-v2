@@ -23,6 +23,11 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.4"
   },
-  "browserslist": ["last 3 version and not dead"],
-  "type": "module"
+  "browserslist": [
+    "last 3 version and not dead"
+  ],
+  "type": "module",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
