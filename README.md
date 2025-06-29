@@ -1,2 +1,2 @@
-# -homework-book-shop-v2
+# homework-book-shop-v2
 Changing a project book-shop using gulp and SCSS
